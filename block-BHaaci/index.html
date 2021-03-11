@@ -1,0 +1,48 @@
+<!-- - Create a forms according to the layout shown below.
+
+![Building HTML forms Assignment level 1](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-1.jpg)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Sign Up Form- Assignment I</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <main>
+        <section class="container flex content-section">
+        <article class="text-container">
+            <h1>Learn to code by Watching others</h1>
+            <p>
+               See how experienced developers solve problems in real-time.
+               Watching scripted tutorials is great, but understanding how 
+               developers think is invaluable.  
+            </p>
+        </article>
+        <div class="form-container">
+            <div class="try-free">
+                <p>
+                    <strong>Try it free 7 days </strong>
+                    then $20/mo. thereafter
+                </p>
+            </div>
+            <form action="/login" action="post">
+                <input type="text" name="first-name" placeholder="First Name">
+                <input type="text" name="last-name" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Email Address">
+                <input type="password" name="password" placeholder="password">
+                <button>CLAIM YOUR FREE TRIAL</button>
+                <small>By clicking the button, you are agreeing to our <strong class="red">Terms and Services</strong></small>              
+            </form>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
