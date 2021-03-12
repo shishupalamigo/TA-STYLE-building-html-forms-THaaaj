@@ -356,13 +356,14 @@ strong {
     padding: 1em;
     position: absolute;
     top: 10%;
-    right: 10%;
-    border: none;
+    right: 5%;
 }
 .feedback input {
     width: 49%;
     padding: .5em;
     margin-bottom: 1em;
+    border: none;
+    background: #E6E6E6;
 }
 .feedback .subject {
     width: 99%;
@@ -370,7 +371,18 @@ strong {
 .feedback textarea {
     width: 99%;
     height: 20vh;
+    border: none;
+    background: #E6E6E6;
 }
 .feedback .submit-btn {
     width: 99%;
+    background: var(--primary-color);
+}
+.footer {
+    background: var(--primary-color);
+    padding: 1.5em;
+}
+.footer small {
+    font-size: 12px;
+    color: #fff;
 }
