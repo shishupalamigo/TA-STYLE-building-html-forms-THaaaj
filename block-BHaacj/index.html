@@ -1,0 +1,362 @@
+<!-- - Create a page according to the layout shown below.
+
+![Building HTML forms Assignment level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-2.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey | Assignment II </title>
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;
+                400;600;700;800&display=swap" 
+                rel="stylesheet">
+    <!-- FONT AWESOME ICONS  -->
+    <script src="https://kit.fontawesome.com/d77ac583c4.js" 
+                  crossorigin="anonymous">
+    </script>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <!-- PAGE HEADER -->
+    <header class="page-header container">
+        <div class="container flex flex-space-between">
+            <a href="index.html" class="brand flex flex-center">
+                <img src="assets/logo.png" alt="Brand Logo">
+                <strong>JOURNEY</strong>
+            </a>
+            <nav class="top-nav flex">
+                <ul class="flex flex-space-between">
+                    <li>
+                        <a href="index.html" class="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Top Destinations</a>
+                    </li>
+                    <li>
+                        <a href="#">Recommended Place</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main class="main container">
+        <!-- BANNER SECTION -->
+        <section class="banner container flex flex-center flex-column">
+          <div class="banner-title flex flex-column">
+              <h1 class="page-title">Let's begin</h1>
+              <img src="assets/dots-3.png" alt="3 dots">
+              <h4 class="page-subtitle">
+                 We Assist you to choose the best.
+              </h4>
+              <div class="down-circle">
+                <i class="fas fa-angle-down"></i>
+              </div>
+          </div>
+          <form action="#" class="banner-form flex">
+              <fieldset class="your-destination flex flex-column">
+                  <label for="destination">Choose Your Destination
+                      <input type="text" class="destination" id="destination" placeholder="Type your destination...">
+                  </label>
+                  <fieldset class="flex check-in-out">
+                    <label for="check-in">Check In Date
+                        <input type="date" class="date" id="check-in" placeholder="Check In">
+                    </label>
+                    <label for="check-out">Check Out Date
+                        <input type="date" class="date" id="check-out" placeholder="Check Out">
+                    </label>
+                  </fieldset>
+              </fieldset>
+              <fieldset class="your-choices flex flex-column">
+                <fieldset class="flex">
+                    <label for="room">How many rooms?
+                        <select name="rooms" id="rooms">
+                            <option value="1 Room">1 Room</option>
+                            <option value="2 Room">2 Rooms</option>
+                            <option value="3 Room">3 Rooms</option>
+                            <option value="4 Room">4 Rooms</option>
+                            <option value="5 Room">5 Rooms</option>
+                        </select>
+                    </label>
+                    <label for="adult">Adult
+                        <select name="adult" id="adult">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </label>
+                    <label for="children">Children
+                        <select name="children" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <label for="availability">
+                    <input type="submit" class="submit-btn" id="availability" value="CHECK AVAILABILITY">
+                </label>
+              </fieldset>
+          </form>
+        </section>
+        <!-- OUR PRIORITY SECTION -->
+        <scetion class="priority container flex flex-column flex-center">
+          <h2 class="priority-title">your <strong>Journey </strong>is our priority</h2>
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, eveniet. 
+              Dicta vitae alias dolor et! Dolor, accusamus vitae distinctio ratione, 
+              dolore perspiciatis officiis obcaecati totam cumque veniam quam 
+              accusantium! 
+          </p>
+          <a href="#" class="btn btn-primary">continue exploring</a>
+        </scetion>
+        <section class="places">
+            <div class="flex places-content flex">
+                <div class="places-image">
+                    <img src="assets/tm-img-01.jpg" alt="Europe">
+                </div>
+                <div class="places-description flex flex-center">
+                    <div class="slide-container flex">
+                        <div class="slide flex flex-center">
+                            <i class="fas fa-arrow-circle-left"></i>
+                        </div>
+                        <div class="slide flex flex-center">
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </div>
+                    </div>
+                    <article class="about-places">
+                        <h3>Europe's most visited places</h3>
+                        <p>
+                           Und die nacht o dich ich immer, es blieb weißt großer 
+                           der ist, geträumt deinen werden dich und wilde dame oft, 
+                           der zürnen du niedlich zürnen wo o. Lange wiedersehn. 
+                        </p>
+                        <a href="#" class="btn btn-secondry">Continue reading</a>
+                    </article>
+                </div>
+            </div>
+            <div class="flex places-content places-content-2">
+                
+                <div class="places-description places-description-2 flex flex-center">
+                    <article class="about-places about-places-2">
+                        <h3>Asia's most popular places</h3>
+                        <p>
+                           Und die nacht o dich ich immer, es blieb weißt großer 
+                           der ist, geträumt deinen werden dich und wilde dame oft, 
+                           der zürnen du niedlich zürnen wo o. Lange wiedersehn. 
+                        </p>
+                        <a href="#" class="btn btn-secondry">Continue reading</a>
+                    </article>
+                    <div class="slide-container flex">
+                        <div class="slide flex flex-center">
+                            <i class="fas fa-arrow-circle-left"></i>
+                        </div>
+                        <div class="slide flex flex-center">
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="places-image places-image-2">
+                    <img src="assets/tm-img-02.jpg" alt="Europe">
+                </div>
+            </div>
+            <div class="flex places-content flex">
+                <div class="places-image">
+                    <img src="assets/tm-img-03.jpg" alt="Europe">
+                </div>
+                <div class="places-description flex flex-center">
+                    <div class="slide-container flex">
+                        <div class="slide flex flex-center">
+                            <i class="fas fa-arrow-circle-left"></i>
+                        </div>
+                        <div class="slide flex flex-center">
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </div>
+                    </div>
+                    <article class="about-places">
+                        <h3>America's most famous places</h3>
+                        <p>
+                           Und die nacht o dich ich immer, es blieb weißt großer 
+                           der ist, geträumt deinen werden dich und wilde dame oft, 
+                           der zürnen du niedlich zürnen wo o. Lange wiedersehn. 
+                        </p>
+                        <a href="#" class="btn btn-secondry">Continue reading</a>
+                    </article>
+                </div>
+            </div>
+        </section> 
+            <!-- CONTINENTS' MAP SECTION  -->
+        <section class="map-strip flex flex-space-between">
+            <div class="map-container">
+                <img src="assets/north-america.png" alt="North America">
+                <p>
+                    North America
+                </p>
+            </div>
+            <div class="map-container">
+                <img src="assets/south-america.png" alt="South America">
+                <p>
+                    South America
+                </p>
+            </div>
+            <div class="map-container">
+                <img src="assets/europe.png" alt="Europe">
+                <p>
+                    Europe
+                </p>
+            </div>
+            <div class="map-container asia">
+                <img src="assets/asia.png" alt="Asia">
+                <p>
+                    Asia
+                </p>
+            </div>
+            <div class="map-container">
+                <img src="assets/africa.png" alt="Africa">
+                <p>
+                    Africa
+                </p>
+            </div>
+            <div class="map-container">
+                <img src="assets/australia.png" alt="Australia">
+                <p>
+                    Australia
+                </p>
+            </div>
+            <div class="map-container">
+                <img src="assets/antartica.png" alt="Antartica">
+                <p>
+                    Antartica
+                </p>
+            </div>
+        </section>
+        <!-- HOTELS SECTION -->
+        <section class="container hotels">
+            <div class="hotels-container flex">
+                <img src="assets/tm-img-06.jpg" alt="Asia Image">
+                <div class="hotel-info">
+                    <h3>Asia Resort hotel</h3>
+                    <span class="red">Singapore</span>
+                    <p>
+                        Y abrir la tierra las subía y quedo, nadadora un quedo
+                         algodón que de baja. Mi de los algodón la..
+                    </p>
+                </div>
+                <div class="prices flex">
+                    <img src="assets/button-curve.png" alt="Button Curve">
+                    <div class="flex flex-column flex-center">
+                        <span class="price">$440</span>
+                    <span class="reading">CONTINUE READING</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-container flex">
+                <img src="assets/tm-img-07.jpg" alt="Asia Image">
+                <div class="hotel-info">
+                    <h3>Nullam pallam ecullam</h3>
+                    <span class="red">Yangoon, Myanmar</span>
+                    <p>
+                        Y abrir la tierra las subía y quedo, nadadora un quedo
+                         algodón que de baja. Mi de los algodón la..
+                    </p>
+                </div>
+                <div class="prices flex">
+                    <img src="assets/button-curve.png" alt="Button Curve">
+                    <div class="flex flex-column flex-center">
+                        <span class="price">$450</span>
+                    <span class="reading">CONTINUE READING</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-container flex">
+                <img src="assets/tm-img-05.jpg" alt="Asia Image">
+                <div class="hotel-info">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <span class="red">Bangkok, Thailand</span>
+                    <p>
+                        Y abrir la tierra las subía y quedo, nadadora un quedo
+                         algodón que de baja. Mi de los algodón la..
+                    </p>
+                </div>
+                <div class="prices flex">
+                    <img src="assets/button-curve.png" alt="Button Curve">
+                    <div class="flex flex-column flex-center">
+                        <span class="price">$460</span>
+                    <span class="reading">CONTINUE READING</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotels-container flex">
+                <img src="assets/tm-img-04.jpg" alt="Asia Image">
+                <div class="hotel-info">
+                    <h3>Stayed a nothing sorrow</h3>
+                    <span class="red">Vientiane, Laos</span>
+                    <p>
+                        Y abrir la tierra las subía y quedo, nadadora un quedo
+                         algodón que de baja. Mi de los algodón la..
+                    </p>
+                </div>
+                <div class="prices flex">
+                    <img src="assets/button-curve.png" alt="Button Curve">
+                    <div class="flex flex-column flex-center">
+                        <span class="price">$470</span>
+                    <span class="reading">CONTINUE READING</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container flex flex-center">
+                <a href="#" class="btn btn-primary">
+                    Show more Places
+                </a>
+            </div>
+        </section>
+        <!--  FULL MAP  SECTION -->
+        <section class="full-map">
+            <div class="full-map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13503.082587909415!2d76.3521509!3d32.210410249999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1615570959702!5m2!1sen!2sin" 
+                         width="100%" height="400" 
+                         style="border:0;" 
+                         allowfullscreen="" 
+                         loading="lazy">
+                </iframe>
+                <form action="#" class="feedback">
+                     <input type="text" placeholder="Name">
+                     <input type="Email" placeholder="Email">
+                    <input type="text" class="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="submit" class="submit-btn" id="availability" value="SEND MESSAGE NOW">
+                </form>    
+            </div>
+        </section>
+    </main>
+    <footer class="footer flex flex-center">
+        <small>Copyright &copy; 2021 AltCampus, Made By Shishupal Kumar</small>
+    </footer>
+</body>
+</html>

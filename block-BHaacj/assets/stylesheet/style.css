@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CUSTOM STYLES  */
+
+/* GENERAL STYLES */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #69C6BA;
+    --secondy-color: #C66995;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5em;
+}
+.flex {
+    display: flex;
+}
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+.flex-space-between {
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+}
+strong {
+    font-weight: 900;
+}
+/* PAGE HEADER */
+.page-header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.page-header .brand strong{
+   font-size: 32px;
+   color: #000;
+   text-transform: uppercase;
+}
+.top-nav  a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 3em;
+}
+.top-nav .home {
+    color: var(--primary-color);
+}
+/* MAIN */
+.main {
+    background: #E6E6E6;
+}
+/* BANNER SECTION */
+.banner {
+    background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                url("../banner.jpg") 50% 50% no-repeat;
+    background-size: cover;            
+    height: 85vh;            
+}
+.banner-title {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 3em;
+    margin-bottom: 2em;
+}
+.page-title {
+    font-size: 48px;
+}
+.banner-title img {
+    height: 40px;
+    width: 10px;
+    align-self: center;
+    padding-bottom: .5em;
+}
+.page-subtitle {
+    font-size: 20px;
+    padding-bottom: .5em;
+}
+.down-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    align-self: center;
+    line-height: 50px;
+}
+.down-circle i {
+    font-size: 24px;
+}   
+/* BANNER FORM */
+.banner-form {
+    width: 70%;
+    background: #EFEFEF;
+    padding: 2em;
+}
+.banner-form label {
+    font-size: 14px;
+    font-weight: 700;
+}
+.banner-form input {
+    border: none;
+    outline: 0;
+    padding: .5em;
+    margin-right: .25em;
+}
+.banner-form input:focus {
+    border: 1px solid var(--primary-color);
+}
+.banner-form select:focus {
+    border: 1px solid var(--primary-color);
+}
+.banner-form select {
+    border: 0;
+    outline: 0;
+    padding: .5em;
+}
+.your-destination {
+    width: 45%;
+}
+.your-destination .destination {
+    width: 94%;
+}
+.check-in-out {
+    margin-top: 1em;
+}
+.date {
+    width: 87%;
+}
+.your-choices {
+    width: 50%;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 35px;
+    margin-top: 2.5em;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+/* PRIORITY SECTION */
+.priority {
+    background: #EFEFEF;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.priority-title {
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+.priority p {
+    text-align: center;
+    color: #474747;
+}
+.btn {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em;
+}
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+.btn-secondry {
+    color: var(--primary-color);
+    background: #fff;
+}
+/* PLACES SECTION */
+.places {
+    background: #fff;
+}
+.places-content {
+    position: relative;
+    font-size: 16px;
+}
+.places-description {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 55%;
+}
+.places-description-2 {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.places-content-2 {
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.places-image-2 {
+    align-self: flex-end;
+    justify-self: right;
+}
+.places-description-2 .btn-secondry {
+    color: #C66995;
+}
+.places-image {
+    width: 50%;
+    font-size: 0;
+}
+.places-image img {
+    width: 100%;
+}
+.about-places {
+    background: var(--primary-color);
+    padding: 2em;   
+    color: #fff;
+}
+.about-places h3 {
+    font-size: 30px;
+}
+.about-places p {
+    font-size: 16px;
+}
+.about-places-2 {
+    background: #C66995;
+}
+.slide {
+    color: white;
+    background: rgba(0,0,0,.4);
+    width: 40px;
+    height: 40px;
+    margin-right: .2em;
+}
+.slide i {
+    font-size: 16px;
+}
+/* MAP STRIP */
+.map-strip {
+    background: var(--primary-color);    
+}
+.map-container {
+    padding: 1em;
+    text-align: center;
+    width: 14.2%;
+}
+.map-container p {
+    color: #fff;
+}
+.asia {
+    background: #C66995;
+}
+/* HOTELS */
+.hotels {
+    padding-top: 3em;
+    background: #fff;
+    
+}
+.hotels-container   {
+    padding-left: 4em;
+    padding-right: 2em;
+    margin: 2em auto;
+}
+.hotel-info {
+    width: 45%;
+    padding: 1em;
+    border-top: 1px  solid rgb(221, 219, 219);
+    border-bottom: 1px  solid rgb(221, 219, 219);
+}
+.hotel-info h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.red {
+    font-size: 12px;
+    color: #C66995;
+}
+.hotel-info p {
+    font-size: 14px;
+    color: #474747;
+    padding-top: 1em;
+}
+.prices {
+    background: var(--primary-color);
+    color: #fff;
+    padding-right: 1em;
+}
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.reading {
+    font-size: 14px;
+}
+/* FULL MAP */
+.full-map {
+    padding-top: 3em;
+    background: #fff;
+}
+.full-map-container {
+    position: relative;
+}
+.feedback {
+    width: 40%;
+    background: #fff;
+    padding: 1em;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+.feedback input {
+    width: 49%;
+    padding: .5em;
+    margin-bottom: 1em;
+    border: none;
+    background: #E6E6E6;
+}
+.feedback .subject {
+    width: 99%;
+}
+.feedback textarea {
+    width: 99%;
+    height: 20vh;
+    border: none;
+    background: #E6E6E6;
+}
+.feedback .submit-btn {
+    width: 99%;
+    background: var(--primary-color);
+}
+.footer {
+    background: var(--primary-color);
+    padding: 1.5em;
+}
+.footer small {
+    font-size: 12px;
+    color: #fff;
+}
