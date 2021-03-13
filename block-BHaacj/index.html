@@ -14,8 +14,9 @@
     <title>Journey | Assignment II </title>
     <!-- FONT FAMILY -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;
-                300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;
+                400;600;700;800&display=swap" 
+                rel="stylesheet">
     <!-- FONT AWESOME ICONS  -->
     <script src="https://kit.fontawesome.com/d77ac583c4.js" 
                   crossorigin="anonymous">
@@ -54,39 +55,68 @@
         <!-- BANNER SECTION -->
         <section class="banner container flex flex-center flex-column">
           <div class="banner-title flex flex-column">
-              <h1>Let's begin</h1>
+              <h1 class="page-title">Let's begin</h1>
               <img src="assets/dots-3.png" alt="3 dots">
-              <p>
+              <h4 class="page-subtitle">
                  We Assist you to choose the best.
-              </p>
+              </h4>
               <div class="down-circle">
-                  <span>&#8964;</span>
+                <i class="fas fa-angle-down"></i>
               </div>
           </div>
           <form action="#" class="banner-form flex">
               <fieldset class="your-destination flex flex-column">
-                  <label for="destinatin">Choose Your Destination
-                      <input type="text" class="destinaton" id="destination" placeholder="Type your destination...">
+                  <label for="destination">Choose Your Destination
+                      <input type="text" class="destination" id="destination" placeholder="Type your destination...">
                   </label>
                   <fieldset class="flex check-in-out">
                     <label for="check-in">Check In Date
-                        <input type="text" class="date" id="check-in" placeholder="Check In">
+                        <input type="date" class="date" id="check-in" placeholder="Check In">
                     </label>
                     <label for="check-out">Check Out Date
-                        <input type="text" class="date" id="check-out" placeholder="Check Out">
+                        <input type="date" class="date" id="check-out" placeholder="Check Out">
                     </label>
                   </fieldset>
               </fieldset>
               <fieldset class="your-choices flex flex-column">
                 <fieldset class="flex">
                     <label for="room">How many rooms?
-                        <input type="number" class="room" id="room" placeholder="1 Room">
+                        <select name="rooms" id="rooms">
+                            <option value="1 Room">1 Room</option>
+                            <option value="2 Room">2 Rooms</option>
+                            <option value="3 Room">3 Rooms</option>
+                            <option value="4 Room">4 Rooms</option>
+                            <option value="5 Room">5 Rooms</option>
+                        </select>
                     </label>
                     <label for="adult">Adult
-                        <input type="number" class="number-select" id="adult" placeholder="1">
+                        <select name="adult" id="adult">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
                     </label>
                     <label for="children">Children
-                        <input type="number" class="number-select" id="children" placeholder="0">
+                        <select name="children" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
                     </label>
                 </fieldset>
                 <label for="availability">
